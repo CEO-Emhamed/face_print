@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style.css">
+    <title>الصفحة الرئيسية</title>
+  
+</head>
+<body class="font-body bg-[url('/src/image/bg.png')] bg-cover bg-center min-h-screen">
+
+    <nav class=" container mx-auto p-6">
+        <div class="flex items-center justify-between">
+            <div>
+                <img src="/src/image/logo.png" alt="logo"   width="100px" height="100px">
+            </div>
+            <div class="hidden md:flex space-x-6 ">
+                <a href="#" class=" text-white text-bold hover:text-slate-500">شؤون العاملين</a>
+                <a href="Account_management.html" class=" text-white text-bold  hover:text-slate-500">ادارة الحساب</a>
+                <a href="system_lg.html" class=" text-white text-bold  hover:text-slate-500">لغات النظام</a>
+
+                <button id="logoutBtn" class="text-white font-bold hover:text-slate-500">تسجيل الخروج</button>
+            </div>
+        </div>
+    </nav>
+<div>
+        <table class=" p-10 w-full  justify-center items-center bg-white rounded-lg">
+            <thead  class="bg-slate-50 border-b-2 border-gray-200 ">
+                <tr>
+                    <th class="p-3 text-sm font-semibold tracking-wide ">الحضور والانصراف</th>
+                    <th class="p-3 text-sm font-semibold tracking-wide ">التقارير</th>
+                    <th class="p-3 text-sm font-semibold tracking-wide ">الموظفين</th>
+
+                </tr>
+            </thead>
+            <td>
+<button class=" w-10 h-8 text-white text-sm font-semibold  bg-slate-800  rounded-full  ">
+    اضافة موظف جديد
+</button>
+            </td>
+            <tbody  class="bg-gray-700 border-b-2 border-gray-200 ">
+                <tr>
+                    <th>اسم الموظف</th>
+                    <th>رقم الموظف</th>
+                  
+    
+                </tr>
+                <tr>
+                    <th>اسم الموظف</th>
+                    <th>رقم الموظف</th>
+              
+    
+                </tr>
+                <tr>
+                    <th>اسم الموظف</th>
+                    <th>رقم الموظف</th>
+                
+    
+                </tr>
+            </tbody>
+
+           
+        </table>
+    </div>
+
+   
+</body>
+</html>

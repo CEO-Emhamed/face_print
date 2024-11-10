@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style.css">
+    <title>لغات النظام</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="font-body bg-[url('/src/image/bg.png')] bg-cover bg-center min-h-screen">
+    <nav class=" container mx-auto p-6">
+        <div class="flex items-center justify-between">
+            <div>
+                <img src="/src/image/logo.png" alt="logo"   width="100px" height="100px">
+            </div>
+            <div class="hidden md:flex space-x-6 ">
+                <a href="index.html" class=" text-white text-bold hover:text-slate-500">الصفحة الرئيسية </a>
+             
+                
+            </div>
+ 
+        </div>
+      
+    </nav>
+
+    
+  
+      <h1 class="text-6xl text-right font-semibold text-white p-10 mb-8">لغات النظام</h1>
+
+      <div class=" relative justify-center items-center bg-white  backdrop-blur-lg p-16 m-10 rounded-2xl shadow-[20px_20px_60px_#091f3e,_-20px_-20px_60px_#0b316a]  text-center  ">        <div class="flex justify-around mb-10 w-full ">
+          <button class="lang-btn  flex items-center p-3 rounded-xl bg-white text-[#0a2854] shadow-lg transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-[7px_7px_20px_#091f3e,_-7px_-7px_20px_#0b316a]" onclick="selectLanguage('ar')">
+            <img src="https://flagcdn.com/w40/sa.png" alt="Arabic Flag" class="w-6 h-6 mr-2" />
+            العربية
+          </button>
+          <button class="lang-btn flex items-center p-3 rounded-xl bg-white text-[#0a2854] shadow-lg transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-[7px_7px_20px_#091f3e,_-7px_-7px_20px_#0b316a]" onclick="selectLanguage('en')">
+            <img src="https://flagcdn.com/w40/gb.png" alt="English Flag" class="w-6 h-6 mr-2" />
+            English
+          </button>
+        </div>
+      
+        <div class="flex justify-between w-full">
+          <button class="action-btn bg-slate-300 text-black px-6 py-2 rounded-xl font-semibold transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg" onclick="cancel()">إلغاء</button>
+          <button class="action-btn bg-slate-800 text-white px-6 py-2 rounded-xl font-semibold transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg" onclick="confirm()">حفظ</button>
+        </div>
+      </div>
+      
+  
+      <script>
+        
+        const container = document.querySelector(".relative");
+        let position = 0;
+        const floatAnimation = () => {
+          position = Math.sin(Date.now() / 1000) * 5;
+          container.style.transform = `translateY(${position}px)`;
+          requestAnimationFrame(floatAnimation);
+        };
+        floatAnimation();
+      </script>
+</body>
+</html>

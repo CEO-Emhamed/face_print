@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css">
+    <title>انشاء حساب</title>
+    <style>
+      /* إضافة بعض التنسيقات الإضافية المطلوبة للمظهر */
+      .icon {
+        background-color: white;
+        color: rgba(136, 136, 136, 1);
+      }
+      h2 {
+        font-size: 24px;
+      }
+      h3 {
+        font-size: 18px;
+        color: rgba(195, 195, 195, 1);
+      }
+      .forgot-password {
+        cursor: pointer;
+        font-size: 0.9rem;
+      }
+    </style>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  />
+</head>
+<body class="font-body bg-[url('/src/image/bg.png')] bg-cover bg-center min-h-screen">    <div class="flex items-center justify-center min-h-screen">
+  <div class="bg-slate-700 bg-opacity-10 p-8 rounded-xl shadow-xl max-w-sm w-full text-center">
+      <img src="src/image/logo.png" alt="Logo" class="w-24 mx-auto mb-6" />
+      <h2 class="text-2xl font-semibold text-gray-200 mb-4">تسجيل حساب جديد</h2>
+
+      <div class="relative mb-4">
+        <i class="fas fa-user absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+        <input
+          type="text"
+          class="w-full pl-10 pr-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          placeholder="اسم المستخدم"
+        />
+      </div>
+
+      <div class="relative mb-4">
+        <i class="fas fa-phone absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+        <input
+          type="text"
+          class="w-full pl-10 pr-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          placeholder="الهاتف"
+        />
+      </div>
+
+      <div class="relative mb-4">
+        <i class="fas fa-envelope absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+        <input
+          type="text"
+          class="w-full pl-10 pr-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          placeholder="البريد الالكتروني"
+        />
+      </div>
+
+      <div class="relative mb-6">
+        <i class="fas fa-lock absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+        <input
+          type="password"
+          class="w-full pl-10 pr-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          placeholder="رمز الدخول"
+        />
+      </div>
+
+      <button
+        class="w-full py-2 px-4 bg-blue-600 text-white font-bold rounded-full hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 mb-4"
+        onclick="login()"
+      >
+        تسجيل حساب
+      </button>
+
+      <p
+        class="text-sm text-gray-100 cursor-pointer hover:text-blue-500"
+        onclick="window.location.href='login.html'"
+      >
+        هل لديك حساب؟
+      </p>
+    </div>
+  </div>
+</body>
+</html>
